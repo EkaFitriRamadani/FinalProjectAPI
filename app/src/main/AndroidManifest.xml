@@ -28,17 +28,6 @@
             </intent-filter>
         </activity>
 
-        <receiver
-            android:name=".notification.NotificationReleaseReceiver"
-            android:enabled="true"
-            android:exported="true" />
-            // tools:ignore="ExportedReceiver"
-
-        <receiver
-            android:name=".notification.NotificationDailyReceiver"
-            android:enabled="true"
-            android:exported="true" />
-            // tools:ignore="ExportedReceiver"
     </application>
 
 </manifest>
