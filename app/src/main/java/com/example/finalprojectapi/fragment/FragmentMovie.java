@@ -123,6 +123,7 @@ public class FragmentMovie extends Fragment implements MovieHorizontalAdapter.on
                                 dataApi.setOverview(jsonObject.getString("overview"));
                                 dataApi.setReleaseDate(formatter.format(dateFormat.parse(datePost)));
                                 dataApi.setPosterPath(jsonObject.getString("poster_path"));
+                                dataApi.setBackdropPath(jsonObject.getString("backdrop_path"));
                                 dataApi.setPopularity(jsonObject.getString("popularity"));
                                 moviePopular.add(dataApi);
                                 showMovie();
@@ -165,6 +166,7 @@ public class FragmentMovie extends Fragment implements MovieHorizontalAdapter.on
                                 dataApi.setOverview(jsonObject.getString("overview"));
                                 dataApi.setReleaseDate(formatter.format(dateFormat.parse(datePost)));
                                 dataApi.setPosterPath(jsonObject.getString("poster_path"));
+                                dataApi.setBackdropPath(jsonObject.getString("backdrop_path"));
                                 dataApi.setPopularity(jsonObject.getString("popularity"));
                                 moviePlayNow.add(dataApi);
                                 showMovieHorizontal();
@@ -208,6 +210,7 @@ public class FragmentMovie extends Fragment implements MovieHorizontalAdapter.on
                                 dataApi.setOverview(jsonObject.getString("overview"));
                                 dataApi.setReleaseDate(formatter.format(dateFormat.parse(datePost)));
                                 dataApi.setPosterPath(jsonObject.getString("poster_path"));
+                                dataApi.setBackdropPath(jsonObject.getString("backdrop_path"));
                                 dataApi.setPopularity(jsonObject.getString("popularity"));
                                 moviePopular.add(dataApi);
                                 showMovie();

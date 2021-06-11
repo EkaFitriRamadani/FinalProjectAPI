@@ -1,5 +1,6 @@
 package com.example.finalprojectapi.fragment;
 
+
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.graphics.Color;
@@ -123,6 +124,7 @@ public class FragmentTV extends Fragment implements TvHorizontalAdapter.onSelect
                                 dataApi.setOverview(jsonObject.getString("overview"));
                                 dataApi.setReleaseDate(formatter.format(dateFormat.parse(datePost)));
                                 dataApi.setPosterPath(jsonObject.getString("poster_path"));
+                                dataApi.setBackdropPath(jsonObject.getString("backdrop_path"));
                                 dataApi.setPopularity(jsonObject.getString("popularity"));
                                 tvPopular.add(dataApi);
                                 showFilmTV();
@@ -165,6 +167,7 @@ public class FragmentTV extends Fragment implements TvHorizontalAdapter.onSelect
                                 dataApi.setOverview(jsonObject.getString("overview"));
                                 dataApi.setReleaseDate(formatter.format(dateFormat.parse(datePost)));
                                 dataApi.setPosterPath(jsonObject.getString("poster_path"));
+                                dataApi.setBackdropPath(jsonObject.getString("backdrop_path"));
                                 dataApi.setPopularity(jsonObject.getString("popularity"));
                                 tvPlayNow.add(dataApi);
                                 showMovieHorizontal();
@@ -208,6 +211,7 @@ public class FragmentTV extends Fragment implements TvHorizontalAdapter.onSelect
                                 dataApi.setOverview(jsonObject.getString("overview"));
                                 dataApi.setReleaseDate(formatter.format(dateFormat.parse(datePost)));
                                 dataApi.setPosterPath(jsonObject.getString("poster_path"));
+                                dataApi.setBackdropPath(jsonObject.getString("backdrop_path"));
                                 dataApi.setPopularity(jsonObject.getString("popularity"));
                                 tvPopular.add(dataApi);
                                 showFilmTV();
